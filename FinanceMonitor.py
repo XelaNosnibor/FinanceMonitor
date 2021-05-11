@@ -10,7 +10,7 @@ pd.set_option('display.max_colwidth', -1)
 
 def main():
     # Read .csv file
-    dataset = pd.read_csv(r'C:\Users\alexd\Documents\VScode Projects\Python Projects\FinanceMonitor\test.csv')
+    dataset = pd.read_csv(r'test.csv')
 
     # Format dataset
     dataset.dropna(subset = ["Debit"], inplace=True)
@@ -42,7 +42,7 @@ def main():
     # Display Grid
     plt.grid(True)
     # Save the plot as a .png
-    plt.savefig(r'C:\Users\alexd\Documents\VScode Projects\Python Projects\FinanceMonitor\plotPNGs\BalanceOverTime.png')
+    plt.savefig(r'BalanceOverTime.png')
     # Show the plot
     plt.show()
 
@@ -59,7 +59,7 @@ def main():
     # Display Grid
     plt.grid(True)
     # Save the plot as a .png
-    plt.savefig(r'C:\Users\alexd\Documents\VScode Projects\Python Projects\FinanceMonitor\plotPNGs\DebitOverTime.png')
+    plt.savefig(r'DebitOverTime.png')
     # Show the plot
     plt.show()
 
